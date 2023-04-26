@@ -38,7 +38,7 @@ header {
 header > h1 {
     color: var(--cor2);
     font-family: var(--fonte2);
-    font-size: 4vw;
+    font-size: 2em;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
 
@@ -46,7 +46,7 @@ header > p {
     color: black;
     font-family: var(--fonte3);
     font-weight: normal;
-    font-size: 2.5vw;
+    font-size: 1.3em;
     max-width: 600px;
     margin: auto;
     margin-top: 15px;
@@ -56,8 +56,8 @@ header > p {
 section {
     padding-top: 3vh;
     padding-bottom: 3vh;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     line-height: 2em;
     font-family: var(--fonte3);
     font-size: 2.5vw;
@@ -72,13 +72,61 @@ section > h2 {
 }
 
 section.normal {
-    background-image: url('');
+    background-image: url(../imagens/curitiba.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+section.normal > p {
+    background-color: rgba(255, 255, 255, 0.463);
+    max-width: 600px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid var(--cor5);
+}
+
+section.imagem {
+    background-color: rgba(255, 255, 255, 0.463);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
 
 }
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url(../imagens/jardim-botanico.jpg);
+    background-position: center center;
+}
+
+section#img02 {
+    background-image: url(../imagens/tangua.jpg);
+    background-position: top center;
+}
+
 footer {
     background-color: var(--cor3);
     text-align: center;
     padding: 10px;
     font-family: var(--fonte3);
     font-size: 1em;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
